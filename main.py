@@ -3,7 +3,7 @@ from SMO import SMO
 
 
 def main():
-    data = pd.read_csv('C:/Users/PCu/Data/data_logistic_1.csv').dropna()
+    data = pd.read_csv('data.csv').dropna()
     x = data.iloc[:, :-1].to_numpy()
     y = data.iloc[:, -1].to_numpy()
     for i in range(len(y)):
